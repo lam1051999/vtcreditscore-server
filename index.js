@@ -17,6 +17,6 @@ app.use(function (err, req, res, next) {
   res.status(422).send({ error: err.message });
 });
 
-app.listen(env.PORT || 5000, function () {
-  console.log("now listening port:" + env.PORT);
+app.listen(process.env.PORT || 5000, function () {
+  console.log("now listening port:" + process.env.PORT);
 });
