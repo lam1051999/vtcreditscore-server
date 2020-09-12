@@ -28,3 +28,7 @@ exports.getListUsers = function (req, res, next) {
     })
     .catch((err) => res.send(err));
 };
+
+exports.testServer = function (req, res, next) {
+  res.send("Server is up and running");
+};
